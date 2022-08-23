@@ -14,6 +14,8 @@
 --dark-text-color: #000000;
 --submain-text-color: #757575;
 --sub-text-color-trans: rgba(255, 255, 255, 0.6);
+--border-color: #ECECEC;
+--portfolio-border-color: #EEEEEE;
 /* background colors */
 --accent-bg-color: #2196F3;
 --main-bg-color: #FFFFFF;
@@ -59,6 +61,11 @@ img {
     list-style-type: none;
 }
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .logo {
     font-family: var(--submain-font-family);
     font-weight: 700;
@@ -86,6 +93,11 @@ img {
 }
 
 /* Header */ 
+
+.header {
+    border-bottom: 1px solid var(--border-color);
+}
+
 .menu-link {
     font-weight: 500;
     line-height: 1.14;
@@ -119,6 +131,7 @@ img {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
 
 /* Hero */
@@ -128,6 +141,7 @@ img {
 }
 
 .hero-header {
+    margin: 0 auto 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -135,9 +149,12 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--light-text-color);
+    width: 696px;
 }
 
 .hero-btn {
+    display: block;
+    margin: 0 auto;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -157,6 +174,15 @@ img {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.benafits-list {
+    width: 1170px;
+}
+
+.benafit-item {
+    width: 270px;
 }
 
 .benafit-text {
@@ -174,9 +200,14 @@ img {
 
 .team-item {
     background-color: var(--main-bg-color);
+    width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-header {
+    padding-top: 30px;
+    margin-bottom: 5px;
     font-weight: 500;
     font-size: var(--submain-font-size);
     line-height: 1.19;
@@ -185,6 +216,7 @@ img {
 }
 
 .team-text {
+    padding-bottom: 30px;
     font-size: var(--submain-font-size);
     line-height: 1.19;
     text-align: center;
@@ -198,11 +230,17 @@ img {
 }    
 
 .logo-white {
+    display: inline-block;
+    margin-bottom: 20px;
     color: var(--light-text-color);
 }
 
 .contacts {
     font-style: normal;
+}
+
+.contact-item {
+    margin-bottom: 9px;
 }
 
 .contact-link {
@@ -246,7 +284,20 @@ img {
     background-color: var(--active-color);
 }
 
+.portfolio-item {
+    width: 370px;
+    border: 1px solid var(--portfolio-border-color);
+}
+
+.portfolio-img { 
+    margin-bottom: 20px;
+}
+
 .portfolio-item-header {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -255,6 +306,9 @@ img {
 }
 
 .portfolio-item-text {
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--submain-text-color);
