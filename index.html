@@ -10,15 +10,18 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Web Studio</title>
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="nav">
-          <a class="link logo" href="./index.html"> <span class="accent">Web</span>Studio </a>
+          <a class="link logo logo-black" href="./index.html">
+            <span class="accent">Web</span>Studio
+          </a>
 
           <ul class="list menu">
             <li class="menu-item">
@@ -43,16 +46,18 @@
       </div>
     </header>
     <main class="main-content">
-      <div class="container">
-        <!--Hero-->
-        <section class="hero section">
-          <div>
+      <!--Hero-->
+      <section class="hero section">
+        <div class="container">
+          <div class="hero-container">
             <h1 class="hero-header">Ефективні рішення для вашого бізнесу</h1>
             <button class="hero-btn" type="button">Замовити послугу</button>
           </div>
-        </section>
-        <!--Our benefits-->
-        <section class="benafits section">
+        </div>
+      </section>
+      <!--Our benefits-->
+      <section class="benafits section">
+        <div class="container">
           <!--Logical header, need to be hidden with css -->
           <h2 class="section-header visually-hidden">Наші переваги</h2>
 
@@ -82,13 +87,16 @@
               </p>
             </li>
           </ul>
-        </section>
-        <!--What we do-->
-        <section class="we-do section">
+        </div>
+      </section>
+      <!--What we do-->
+      <section class="we-do section">
+        <div class="container">
           <h2 class="section-header">Чим ми займаємося</h2>
           <ul class="list we-do-list">
             <li class="we-do-item">
               <img
+                class="we-do-img"
                 src="./images/what-we-do/img-1.jpg"
                 alt="Стіл на якому лежить аркуш паперу з схематично зображеною логікою сайту, та руки програміста на клавіатурі, який пише код сайту, на моніторі та планшеті видно фрагменти коду"
                 width="370"
@@ -97,6 +105,7 @@
             </li>
             <li class="we-do-item">
               <img
+                class="we-do-img"
                 src="./images/what-we-do/img-2.jpg"
                 alt="Дизайнер розробляє прототип, як має виглядати додаток, на ноутбуці та моніторі зображені приклади екранів модільного телефону з варіантами дизайну"
                 width="370"
@@ -105,6 +114,7 @@
             </li>
             <li class="we-do-item">
               <img
+                class="we-do-img"
                 src="./images/what-we-do/img-3.jpg"
                 alt="Дизайнер підбирає палітру кольорів тримаючи в руках планшет з палітрою у вигляді сот"
                 width="370"
@@ -112,9 +122,11 @@
               />
             </li>
           </ul>
-        </section>
-        <!--Our team-->
-        <section class="team section">
+        </div>
+      </section>
+      <!--Our team-->
+      <section class="team section">
+        <div class="container">
           <h2 class="section-header">Наша команда</h2>
           <ul class="list team-list">
             <li class="team-item">
@@ -162,11 +174,11 @@
               <p class="team-text" lang="en">UI Designer</p>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="container footer-container">
         <div>
           <a class="link logo logo-white" href="./index.html" lang="en">
             <span class="accent">Web</span>Studio
