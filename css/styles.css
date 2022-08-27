@@ -187,8 +187,9 @@ img {
 }
 
 .hero-header {
-  margin: 0 auto;
-  padding-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -235,7 +236,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .benafit-item {
@@ -301,11 +302,9 @@ img {
 
 /* Footer */
 .footer {
-  background-color: var(--dark-bg-color);
-}
-.footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--dark-bg-color);
 }
 
 .logo-white {
@@ -391,15 +390,16 @@ img {
 }
 
 .item-desc {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
   border-bottom: 1px solid var(--portfolio-border-color);
   border-left: 1px solid var(--portfolio-border-color);
   border-right: 1px solid var(--portfolio-border-color);
 }
 
 .portfolio-item-header {
-  padding-top: 20px;
-  padding-right: 24px;
-  padding-left: 24px;
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -409,9 +409,6 @@ img {
 }
 
 .portfolio-item-text {
-  padding-bottom: 20px;
-  padding-right: 24px;
-  padding-left: 24px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--submain-text-color);
