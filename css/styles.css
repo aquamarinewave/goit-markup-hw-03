@@ -248,7 +248,7 @@ img {
 }
 
 .benafit-item {
-  flex-basis: calc((100% - var(var(--indent-main)) * (var(--items-main) -1)) / var(--items-main));
+  flex-basis: calc((100% - (var(--indent-main)) * (var(--items-main) - 1)) / var(--items-main));
 }
 
 .benafit-text {
