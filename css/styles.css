@@ -24,6 +24,7 @@
   /* actions */
   --active-color: #2196f3;
   --active-bg-color: #2196f3;
+  --active-bg-btn: #188ce8;
   /* other */
   --items-main: 4;
   --indent-main: 30px;
@@ -183,6 +184,7 @@ img {
 /* Hero */
 
 .hero {
+  padding: 200px 0;
   background-color: var(--dark-bg-color);
 }
 
@@ -218,6 +220,13 @@ img {
   cursor: pointer;
 }
 
+.hero-btn:hover,
+.hero-btn:focus {
+  background: var(--active-bg-btn);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
 /* Our benefits */
 
 .benafits {
@@ -227,7 +236,6 @@ img {
 .benafits-list {
   display: flex;
   gap: 30px;
-  width: 1170px;
 }
 
 .benafit-header {
@@ -240,7 +248,7 @@ img {
 }
 
 .benafit-item {
-  width: 270px;
+  flex-basis: calc((100% - var(var(--indent-main)) * (var(--items-main) -1)) / var(--items-main));
 }
 
 .benafit-text {
@@ -272,7 +280,7 @@ img {
 
 .team-item {
   background-color: var(--main-bg-color);
-  flex-basis: calc((100% - var(var(--indent-main)) * (var(--items-main) -1)) / var(--items-main));
+  flex-basis: calc((100% - (var(--indent-main)) * (var(--items-main) - 1)) / var(--items-main));
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -281,9 +289,13 @@ img {
   width: 100%;
 }
 
-.team-header {
+.team-desc {
   padding-top: 30px;
-  margin-bottom: 5px;
+  padding-bottom: 30px;
+}
+
+.team-header {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: var(--submain-font-size);
   line-height: 1.19;
@@ -292,7 +304,6 @@ img {
 }
 
 .team-text {
-  padding-bottom: 30px;
   font-size: var(--submain-font-size);
   line-height: 1.19;
   text-align: center;
@@ -308,7 +319,7 @@ img {
 }
 
 .logo-white {
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
   color: var(--light-text-color);
 }
